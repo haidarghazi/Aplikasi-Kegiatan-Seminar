@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Peserta | International Conference</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
+
+  <!-- Login Card -->
+  <div class="bg-white w-full max-w-sm sm:max-w-md rounded-xl shadow-lg p-6 sm:p-8 lg:p-10">
+
+    <!-- Title -->
+    <div class="text-center mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">Login Peserta</h1>
+      <p class="text-sm sm:text-base text-gray-500">International Conference 2025</p>
+    </div>
+
+    <!-- Form -->
+    <form class="space-y-5 sm:space-y-6">
+      <!-- Email Field -->
+      <div>
+        <label for="email" class="block text-sm sm:text-base font-medium text-gray-700 mb-2">
+          Email
+        </label>
+        <input id="email" type="email" placeholder="email@example.com"
+          class="w-full px-4 py-3 sm:py-3.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-sm sm:text-base"
+          required />
+      </div>
+
+      <!-- Password Field -->
+      <div>
+        <label for="password" class="block text-sm sm:text-base font-medium text-gray-700 mb-2">
+          Password
+        </label>
+        <input id="password" type="password" placeholder="••••••••"
+          class="w-full px-4 py-3 sm:py-3.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-sm sm:text-base"
+          required />
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit"
+        class="w-full bg-blue-600 text-white py-3 sm:py-3.5 rounded-lg font-semibold hover:bg-blue-700 active:bg-blue-800 transition duration-200 text-sm sm:text-base shadow-md hover:shadow-lg">
+        Login
+      </button>
+    </form>
+
+    <!-- Links -->
+    <div class="text-center mt-6 sm:mt-8 space-y-2">
+      <p class="text-sm sm:text-base text-gray-600">
+        Belum punya akun?
+        <a href="create-account.html" class="text-blue-600 hover:text-blue-700 hover:underline font-medium transition">
+          Daftar
+        </a>
+      </p>
+      <p class="text-sm sm:text-base">
+        <a href="#" class="text-blue-600 hover:text-blue-700 hover:underline font-medium transition">
+          Lupa Password?
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Optional: Add logo or branding -->
+  <div class="absolute top-4 left-4 sm:top-6 sm:left-6">
+    <a href="index.html" class="text-xl sm:text-2xl font-bold text-blue-600 hover:text-blue-700 transition">
+      EventFlow
+    </a>
+  </div>
+
+</body>
+
+</html>
