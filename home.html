@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventFlow - International Conference</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <h1 class="text-xl sm:text-2xl font-bold text-blue-600">EventFlow</h1>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About Us</a>
+          <a href="#speakers" class="text-gray-700 hover:text-blue-600 transition">Speakers</a>
+          <a href="#seminars" class="text-gray-700 hover:text-blue-600 transition">Seminar Mendatang</a>
+          <a href="#register" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            Register
+          </a>
+          <a href="/frontend/login.html" class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+            Login
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+      <div class="px-4 pt-2 pb-4 space-y-2">
+        <a href="#home" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">Home</a>
+        <a href="#about" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">About Us</a>
+        <a href="#speakers" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">Speakers</a>
+        <a href="#seminars" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">Seminar Mendatang</a>
+        <a href="#register" class="block px-3 py-2 rounded-md bg-blue-600 text-white text-center hover:bg-blue-700 transition">Register</a>
+        <a href="frontend/login.html" class="block px-3 py-2 rounded-md bg-gray-700 text-white text-center hover:bg-gray-800 transition">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="relative pt-16 min-h-screen flex items-center justify-center" style="background-image: url(gambar/seminar3.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    
+    <!-- Content -->
+    <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 py-20">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 text-blue-500 drop-shadow-lg">
+        EventFlow
+      </h2>
+      <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light italic mb-8 sm:mb-10 text-white drop-shadow-md">
+        Where Every Moment Flows Perfectly
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#register" class="w-full sm:w-auto bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg">
+          Daftar Sekarang
+        </a>
+        <a href="frontend/create-conference.html" class="w-full sm:w-auto bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg">
+          Buat Acara Anda
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <h3 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Tentang Kami</h3>
+    <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+      EventFlow merupakan aplikasi untuk memudahkan pengelolaan dan penyelenggaraan kegiatan Seminar, Workshop, dan International Conference.
+    </p>
+  </section>
+
+  <!-- Speakers Section -->
+  <section id="speakers" class="bg-white py-12 sm:py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12">Pembicara</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div class="bg-gray-100 p-6 sm:p-8 rounded-lg text-center hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg sm:text-xl mb-2">Dr. John Doe</h4>
+          <p class="text-sm sm:text-base text-gray-600">AI Researcher</p>
+        </div>
+        <div class="bg-gray-100 p-6 sm:p-8 rounded-lg text-center hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg sm:text-xl mb-2">Prof. Jane Smith</h4>
+          <p class="text-sm sm:text-base text-gray-600">Cyber Security Expert</p>
+        </div>
+        <div class="bg-gray-100 p-6 sm:p-8 rounded-lg text-center hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg sm:text-xl mb-2">Dr. Ahmad Rizki</h4>
+          <p class="text-sm sm:text-base text-gray-600">Data Scientist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seminars Section -->
+  <section id="seminars" class="py-12 sm:py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Seminar Mendatang</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="gambar/uiux.jpg" alt="Seminar UI/UX" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Seminar UI/UX</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-1">Date: 2025-01-15</p>
+          <p class="text-sm sm:text-base text-gray-700">Pembahasan desain antarmuka dan pengalaman pengguna.</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="gambar/ai.png" alt="Seminar AI" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Seminar Artificial Intelligence (AI)</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-1">Date: 2025-02-20</p>
+          <p class="text-sm sm:text-base text-gray-700">Penerapan dan perkembangan teknologi kecerdasan buatan.</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="gambar/seminar-microsoft.jpg" alt="Seminar Microsoft" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Seminar Microsoft</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-1">Date: 2025-03-10</p>
+          <p class="text-sm sm:text-base text-gray-700">Inovasi dan solusi teknologi dari Microsoft.</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="gambar/kali-linux.jpg" alt="Seminar Kali Linux" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Seminar Kali Linux</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-1">Date: 2025-01-15</p>
+          <p class="text-sm sm:text-base text-gray-700">Pengenalan keamanan siber dan penetration testing.</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="gambar/seminar-samsung.jpg" alt="Seminar Samsung" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Seminar Samsung</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-1">Date: 2025-01-15</p>
+          <p class="text-sm sm:text-base text-gray-700">Inovasi teknologi dan perkembangan AI Samsung.</p>
+        </div>
+        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="gambar/seminar-xiaomi.jpeg" alt="Seminar Xiaomi" class="w-full h-48 object-cover mb-4 rounded">
+          <h3 class="text-lg sm:text-xl font-bold mb-2">Seminar Xiaomi</h3>
+          <p class="text-sm sm:text-base text-gray-600 mb-1">Date: 2025-01-15</p>
+          <p class="text-sm sm:text-base text-gray-700">Teknologi ekosistem dan produk pintar Xiaomi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Section -->
+  <section id="register" class="bg-white py-12 sm:py-16 lg:py-20">
+    <div class="max-w-md mx-auto px-4 sm:px-6">
+      <h3 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Pendaftaran</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nama Lengkap" class="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <input type="email" placeholder="Email" class="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <input type="text" placeholder="Institusi" class="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <button class="w-full bg-blue-600 text-white py-3 sm:py-4 rounded-lg font-semibold hover:bg-blue-700 transition">
+          Daftar
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p class="text-sm sm:text-base">© 2025 EventFlow</p>
+  </footer>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
